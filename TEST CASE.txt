@@ -1,0 +1,9 @@
+document 1 》 A B 4 3 E B A E 2 D 
+document 2 》 A A E B 1 A D 3 1 C 
+document 3 》 2 E B 3 2 2 B A 4 4 
+document 4 》 5 3 E 2 2 E A E 5 A 
+document 5 》 E 2 B 5 1 1 2 B 5 E 
+query 》 A B C D E 
+result of Cos Sim 》 D2(0.967) D1(0.536) D3(0.185) D4(0.138) D5(0.138) 
+result of Authority after normalization 》 D2(0.7) D3(0.53) D4(0.37) D1(0.24) D5(0.2) 
+result of hub after normalization 》 D1(0.6) D4(0.53) D3(0.4) D5(0.35) D2(0.28)
