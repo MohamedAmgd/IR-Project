@@ -50,7 +50,7 @@ def idf_dic(list_doc):
                 x += 1
         if x == 0:
             continue
-        result[chr(i)] = math.log2(6 / x)
+        result[chr(i)] = math.log2(len(list_doc) / x)
     return result
 
 
@@ -96,5 +96,6 @@ def calc_result(query, list_path):
 
 
 if __name__ == '__main__':
-    l = ["d1.txt", "d2.txt", "d3.txt", "d4.txt", "d5.txt"]
-    print(calc_result("z z z z z z z", l))
+    l = ["1.txt", "2.txt", "3.txt", "4.txt", "5.txt"]
+    print(dict(sorted(calc_result("ABCD", l).items(), key=lambda x: x[1],
+                      reverse=True)))
